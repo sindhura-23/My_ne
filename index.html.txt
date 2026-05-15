@@ -1,85 +1,209 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome Message</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Happy Birthday Yallu🌸✨🎉</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    height:100vh;
+    overflow:hidden;
+    font-family: Arial, sans-serif;
+
+    background-image:url('Snapchat-851764982.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Dark overlay */
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+}
+
+/* Message Card */
+
+.message{
+
+    position:relative;
+    z-index:2;
+
+    width:85%;
+    padding:35px;
+
+    text-align:center;
+
+    background:rgba(0,0,0,0.35);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(4px);
+
+    box-shadow:0 0 25px rgba(255,255,255,0.2);
+}
+
+h1{
+
+    color:#ff66b2;
+    font-size:42px;
+
+    text-shadow:0 0 15px #ff66b2;
+}
+
+p{
+
+    color:white;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    margin-top:15px;
+}
+
+.love{
+
+    margin-top:25px;
+
+    color:#ffd6eb;
+
+    font-size:28px;
+}
+
+/* Fireworks */
+
+.firework{
+
+    position:absolute;
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    animation:blast 1.8s infinite;
+}
+
+.firework:nth-child(1){
+
+    top:15%;
+    left:20%;
+
+    background:red;
+
+    animation-delay:0s;
+}
+
+.firework:nth-child(2){
+
+    top:25%;
+    left:75%;
+
+    background:yellow;
+
+    animation-delay:0.5s;
+}
+
+.firework:nth-child(3){
+
+    top:70%;
+    left:15%;
+
+    background:cyan;
+
+    animation-delay:1s;
+}
+
+.firework:nth-child(4){
+
+    top:75%;
+    left:80%;
+
+    background:magenta;
+
+    animation-delay:1.5s;
+}
+
+@keyframes blast{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+        box-shadow:
+        0 0 10px white,
+        0 0 20px white;
     }
 
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-    }
+    100%{
 
-    .card {
-      background: white;
-      padding: 40px 50px;
-      border-radius: 20px;
-      max-width: 600px;
-      width: 90%;
-      text-align: center;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-      animation: fadeIn 1.2s ease-in-out;
-    }
+        transform:scale(15);
 
-    h1 {
-      color: #333;
-      font-size: 2.2rem;
-      margin-bottom: 15px;
-    }
+        opacity:0;
 
-    p {
-      color: #555;
-      font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 15px;
+        box-shadow:
+        0 0 50px white,
+        0 0 100px white;
     }
+}
 
-    .footer {
-      margin-top: 25px;
-      font-size: 0.9rem;
-      color: #888;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
+</style>
 </head>
+
 <body>
-  <div class="card">
-    <h1>Hello 👋</h1>
+
+<div class="overlay"></div>
+
+<div class="firework"></div>
+<div class="firework"></div>
+<div class="firework"></div>
+<div class="firework"></div>
+
+<div class="message">
+
+    <h1>🎉 Happy Birthday Yallu 🎉✨🌸</h1>
+
     <p>
-      Welcome to this simple and beautiful webpage.
-      You can share this link with anyone, and they will see this message.
+        You are my first best friend,<br>
+        my biggest support and my forever happiness ❤️
     </p>
+
     <p>
-      You can customize this text for greetings, announcements, love notes,
-      or any message you want to deliver beautifully.
+        Thank you for being part of
+        every smile, every memory,
+        and every beautiful moment ✨
     </p>
-    <div class="footer">
-      Made with ❤️ using HTML & CSS
+
+    <p>
+       No matter what I will always be there for you♥️
+    </p>
+
+    <div class="love">
+        Love You Forever 💕
     </div>
-  </div>
+
+</div>
+
 </body>
 </html>
